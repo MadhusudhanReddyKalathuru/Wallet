@@ -212,6 +212,7 @@ public class PayMentGateWay extends Activity {
     private final class PayUJavaScriptInterface {
 
         PayUJavaScriptInterface() {
+            Log.e("","");
         }
 
         @JavascriptInterface
