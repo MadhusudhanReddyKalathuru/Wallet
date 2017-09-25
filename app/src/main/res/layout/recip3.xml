@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layoutbackground">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"
+        android:text="Please enter recipients address"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView8"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="11dp"
+        android:text="*denots a required field"
+        android:textColor="@android:color/background_dark" />
+
+    <Spinner
+        android:id="@+id/countryspinner"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView8"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/rounded_edittext" />
+
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/countryspinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded_edittext"
+        android:ems="10"
+        android:hint="Address *"
+        android:inputType="textPostalAddress"
+        android:paddingLeft="15dp"
+        android:textColorHint="@color/hintcolor" />
+
+    <EditText
+        android:id="@+id/editText8"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/editText7"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded_edittext"
+        android:ems="10"
+        android:hint="Address 2"
+        android:inputType="textPostalAddress"
+        android:paddingLeft="15dp"
+        android:textColorHint="@color/hintcolor" />
+
+    <EditText
+        android:id="@+id/editText9"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/editText8"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded_edittext"
+        android:ems="10"
+        android:hint="City *"
+        android:inputType="textPersonName"
+        android:paddingLeft="15dp"
+        android:textColorHint="@color/hintcolor" />
+
+    <Spinner
+        android:id="@+id/spinner4"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editText9"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/rounded_edittext" />
+
+    <EditText
+        android:id="@+id/editText10"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/spinner4"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:ems="10"
+        android:hint="Postal Code*"
+        android:inputType="number"
+        android:paddingLeft="15dp"
+        android:maxLength="6"
+        android:textColorHint="@color/hintcolor" />
+
+    <Button
+        android:id="@+id/rep_btn2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/signupbtn"
+        android:text="Next"
+        android:textColor="@color/purewhite" />
+
+
+</RelativeLayout>

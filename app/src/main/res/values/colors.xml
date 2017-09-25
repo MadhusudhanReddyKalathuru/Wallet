@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="lightgreen">#97e238</color>
+    <color name="hintcolor">#D6D6D9</color>
+    <color name="layoutbackground">#F1F5F9</color>
+    <color name="purewhite">#FFFFFDFE</color>
+
+
+    //layout backgrounds
+    <color name="signinbg">#F2F6F9</color>
+    <color name="drawablebg">#3273AD</color>
+    <color name="twittorbtn">#13ADED</color>
+    <color name="XFERTitle">#64B9E8</color>
+    <color name="txt">#3172AC</color>
+    <color name="settingsbg">#EEF2F7</color>
+
+</resources>

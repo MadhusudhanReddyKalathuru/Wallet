@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Wallet</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+//SignUp Layout
+    <string name="dob"><u>Why do you need my date of birth ?</u></string>
+    <string name="forgot"><u>Forgot Password</u></string>
+    <string name="Createac"><u>Create an Account</u></string>
+    <string name="signin"><u>Sign In</u></string>
+
+    //Layout Titles
+    <string name="forgottitle">Forgot Password</string>
+    <string name="signuptitle">Create Account</string>
+    <string name="title_activity_home">Coco Soft</string>
+
+
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_user_home">UserHome</string>
+
+    //lables
+    <string name="share">Share</string>
+    <string name="password">Password</string>
+    <string name="about">About</string>
+    <string name="transactions">Transactions</string>
+    <string name="help">Help</string>
+    <string name="btn_about">About Coco Soft</string>
+    <string name="btn_recepts">Receptents</string>
+
+    <string name="Rs">\u20B9</string>
+
+    <string name="base_url">http://54.68.141.32:8080/</string>
+
+</resources>

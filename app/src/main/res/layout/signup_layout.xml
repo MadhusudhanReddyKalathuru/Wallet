@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layoutbackground"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txt_titletext1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:text="Please enter name as it appears on your"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/edit_firstname"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_above="@+id/edit_lastname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        android:paddingLeft="15dp"
+        android:textColorHint="@color/hintcolor" />
+
+    <TextView
+        android:id="@+id/txt_titletext2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="government issued ID."
+        android:layout_below="@+id/txt_titletext1"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/edit_lastname"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:background="@drawable/rounded_edittext"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+        android:paddingLeft="15dp"
+        android:textColorHint="@color/hintcolor"
+        android:layout_above="@+id/edit_emailid"
+        android:layout_alignLeft="@+id/edit_firstname"
+        android:layout_alignStart="@+id/edit_firstname" />
+
+    <EditText
+        android:id="@+id/edit_emailid"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_above="@+id/edit_password"
+        android:layout_alignLeft="@+id/edit_lastname"
+        android:layout_alignStart="@+id/edit_lastname"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:ems="10"
+        android:hint="Email Id"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="15dp"
+        android:textColorHint="@color/hintcolor" />
+
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_alignLeft="@+id/edit_emailid"
+        android:layout_alignStart="@+id/edit_emailid"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="15dp"
+        android:textColorHint="@color/hintcolor" />
+
+    <EditText
+        android:id="@+id/edit_dateofbirth"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_alignLeft="@+id/edit_password"
+        android:layout_alignStart="@+id/edit_password"
+        android:layout_below="@+id/edit_password"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:ems="10"
+        android:hint="Date Of Birth"
+        android:inputType="date"
+        android:maxLength="10"
+        android:paddingLeft="15dp"
+        android:textColorHint="@color/hintcolor" />
+
+    <TextView
+        android:id="@+id/txt_titletext3"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:paddingLeft="10dp"
+        android:text="@string/dob"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/edit_dateofbirth"
+        android:layout_alignLeft="@+id/txt_titletext2"
+        android:layout_alignStart="@+id/txt_titletext2" />
+
+    <Button
+        android:id="@+id/btn_createaccount"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="13dp"
+       android:background="@drawable/signupbtn"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="Create Account"
+        android:textColor="@android:color/background_light"
+        android:textSize="20dp"
+        android:layout_below="@+id/txt_titletext3"
+        android:layout_alignLeft="@+id/edit_dateofbirth"
+        android:layout_alignStart="@+id/edit_dateofbirth" />
+
+    <TextView
+        android:id="@+id/txt_titletext4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Already have an account ? "
+        android:layout_below="@+id/btn_createaccount"
+        android:layout_alignEnd="@+id/txt_titletext2" />
+
+    <TextView
+        android:id="@+id/txt_signtext4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txt_titletext4"
+        android:layout_toEndOf="@+id/txt_titletext4"
+        android:text="@string/signin" />
+
+</RelativeLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/layoutbackground">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/transaction_bg">
+
+        <Spinner
+            android:id="@+id/simpleSpinner2"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="0.5"
+            android:background="@drawable/transaction_bg"
+
+            />
+
+        <Spinner
+            android:id="@+id/simpleSpinner1"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="0.5"
+            android:background="@drawable/transaction_bg" />
+    </RelativeLayout>
+
+    <TableRow
+        android:id="@+id/tableRow"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeLayout"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="179dp"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginStart="0dp"
+                android:background="@drawable/rounded_edittext"
+                android:ems="10"
+                android:hint=""
+                android:inputType="numberDecimal"
+                android:padding="40dp"
+                android:text=""
+                android:gravity="center_horizontal"
+                android:textColorHint="@color/hintcolor" />
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="179dp"
+                android:layout_height="100dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:background="@drawable/rounded_edittext"
+                android:ems="10"
+                android:hint=""
+                android:textColorHint="@color/hintcolor"
+                android:text=""
+                android:inputType="numberDecimal"
+                android:gravity="center_horizontal"
+                android:padding="40dp"
+                />
+                <!--android:focusable="false"-->
+
+        </RelativeLayout>
+    </TableRow>
+
+    <Button
+        android:id="@+id/send_money_btn"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/tableRow"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/trans_send_btn"
+        android:text="Send"
+        android:textColor="@color/purewhite"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/send_money_btn"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/relativeLayout2"
+        android:background="@color/purewhite">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/relativeLayout2"
+        android:layout_centerHorizontal="true"
+        android:text="Transactions History"
+        android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tran_histry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:text="You don't have any transactions right now trying money to get started"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@+id/textView3" />
+    </RelativeLayout>
+
+</RelativeLayout>

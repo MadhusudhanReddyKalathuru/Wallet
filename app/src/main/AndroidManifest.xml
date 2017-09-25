@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.simplifiedcoding.navigationdrawerexample">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/coco"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.wallet.main.SplashScreen"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.wallet.main.SignupActivity"/>
+        <activity android:name="com.wallet.main.SignInActivity"/>
+        <activity android:name="com.wallet.main.ForgotPwdActivity"/>
+        <activity android:name="com.wallet.MainActivity"/>
+        <activity android:name="com.wallet.activity.MyAccount"
+            android:label="My Account"/>
+        <activity android:name="com.wallet.activity.AddRecepitent"
+            android:label="Send Money"/>
+        <activity android:name="com.wallet.activity.RecepitentDetails"
+            android:label="Add Recipent(1 Of 4)" />
+        <activity android:name="com.wallet.activity.FillReciptent"
+            android:label="AddRecepent(2 Of 4)"/>
+        <activity android:name="com.wallet.activity.Gender"
+            android:label="Receptent's Gender(3 Of 4)" />
+        <activity android:name="com.wallet.activity.ChangePassword"/>
+        <activity android:name="com.wallet.activity.Pin"
+            android:label="Pin Code"/>
+        <activity android:name="com.wallet.activity.Analytics"
+            android:label="Analytics"/>
+        <activity android:name="com.wallet.activity.BankDetails"
+            android:label="Bank Details(4 Of 4)" />
+        <activity android:name="com.wallet.activity.RcepitentsList"
+            android:label="Recepents List"/>
+        <activity android:name="com.wallet.payumoneygatway.PayMentGateWay"/>
+        <activity android:name="com.wallet.payumoneygatway.AddMoney"/>
+    </application>
+
+</manifest>

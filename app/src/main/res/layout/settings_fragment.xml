@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/settingsbg">
+
+
+    <Button
+        android:id="@+id/btn_myaccount"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/rounded_edittext"
+        android:paddingRight="260dp"
+        android:text="My Account"
+        tools:textAllCaps="false"
+        android:onClick="button"/>
+
+    <Button
+        android:id="@+id/btn_changepwd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_edittext"
+        android:paddingRight="220dp"
+        android:text="Change Password"
+        tools:textAllCaps="false"
+        android:layout_marginBottom="1dp"
+        android:layout_below="@+id/btn_myaccount"
+        android:layout_alignParentStart="true"
+        android:onClick="button"/>
+
+    <Button
+        android:id="@+id/btn_pin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/btn_changepwd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/rounded_edittext"
+        android:paddingRight="232dp"
+        android:text="Change Pin Code"
+        tools:textAllCaps="false"
+        android:onClick="button"/>
+
+    <Button
+        android:id="@+id/btn_anylitics"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btn_pin"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/rounded_edittext"
+        android:onClick="button"
+        android:paddingRight="280dp"
+        android:text="Analytics"
+        tools:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_edittext"
+        android:paddingRight="280dp"
+        android:text="Logout"
+        android:onClick="button"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+    </RelativeLayout>
+</RelativeLayout>
